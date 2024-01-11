@@ -3,9 +3,10 @@
   <head>
         <style>
             :root {
-                --color-white: #f3eaea;
+                --color-white: #faf9f9;
                 --color-darkblue-alpha: rgba(12, 12, 230, 0.8);
                 --color-green: #08e756;
+                --color-orange: #c97c3d;
             }
 
             *, *::before, *::after {
@@ -17,7 +18,7 @@
                 font-size: 1rem;
                 font-weight: 200;
                 line-height: 1.4;
-                color: white;
+                color: var(--color-white);
                 display: block;
                 margin: 300px;
             }
@@ -30,7 +31,7 @@
                 height: 100%;
                 width: 100%;
                 z-index: -1;
-                background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://www.kaspersky.com/content/en-global/images/repository/isc/2022/are-online-survey-sites-safe-1.jpg);
+                background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.3), rgba(136, 136, 206, 0.7) ), url(https://www.kaspersky.com/content/en-global/images/repository/isc/2022/are-online-survey-sites-safe-1.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -44,7 +45,7 @@
             .header {
                 padding: 0rem;
                 margin-bottom: 0rem;
-                display: block;
+
             }
 
             .text-center {
@@ -67,7 +68,7 @@
                 display: flex;
                 align-items: left;
                 font-size: 1.125rem;
-                margin-bottom: 0.5rem;
+                margin: 2rem 0 1rem 0;
                 cursor: default;
             }
 
@@ -110,6 +111,7 @@
             <p id="description" class="description text-center">
                 Thank you for taking the time to help us improve the platform
             </p>
+
       </header>
       <form id="survey-form">
         <div class="form-group">
@@ -119,7 +121,7 @@
                 name="name"
                 id="name"
                 class="form-control"
-                placeholder="Enter your name"
+                placeholder="   "
                 required
           />
         </div>
@@ -288,7 +290,7 @@
         </div>
         <div class="form-group">
             <p>Any comments or suggestions?</p>
-            <textarea
+            <textarea 
                 id="comments"
                 class="input-textarea"
                 name="comment"
